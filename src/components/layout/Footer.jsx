@@ -3,8 +3,8 @@ import Images from '../Images'
 import logo from "../../assets/logo.png"
 import f from "../../assets/f.png"
 import v1 from "../../assets/v1.png"
-import vector1 from "../../assets/vector1.png"
-import vector2 from "../../assets/vector2.png"
+import v2 from "../../assets/v2.png"
+import v3 from "../../assets/v3.png"
 import Container from '../Container'
 import Flex from '../Flex'
 import Heading from '../Heading'
@@ -94,9 +94,9 @@ const Footer = () => {
         <Flex className="justify-between items-center mt-11 ">
             <p className='font-pop font-normal text-sm text-blk'>Copyright © 2021 Tronix. All Right Reseved</p>
             <Flex className="gap-x-4">
-                <Images src={vector}/>
-                <Images src={vector1}/>
-                <Images src={vector2}/>
+                <Images src={v1}/>
+                <Images src={v2}/>
+                <Images src={v3}/>
             </Flex>
         </Flex>
         </Container>
