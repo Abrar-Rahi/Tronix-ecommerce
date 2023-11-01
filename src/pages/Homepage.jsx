@@ -1,4 +1,4 @@
-import "../app.css"
+
 import Container from '../components/Container'
 import Images from '../components/Images'
 import banner1 from "../assets/banner1.png"
