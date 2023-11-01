@@ -2,7 +2,7 @@ import React from 'react'
 import Images from '../Images'
 import logo from "../../assets/logo.png"
 import f from "../../assets/f.png"
-import vector from "../../assets/vector.png"
+import v1 from "../../assets/v1.png"
 import vector1 from "../../assets/vector1.png"
 import vector2 from "../../assets/vector2.png"
 import Container from '../Container'
