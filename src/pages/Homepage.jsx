@@ -1,4 +1,4 @@
-import React from 'react'
+import "../app.css"
 import Container from '../components/Container'
 import Images from '../components/Images'
 import banner1 from "../assets/banner1.png"
@@ -27,16 +27,36 @@ import Button from '../components/Button'
 import {BsCartCheckFill} from "react-icons/bs"
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
+import React from "react";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import NextArrows from "../components/NextArrows"
+
 
 const Homepage = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: <NextArrows />,
+      };
+      
     let cart = useSelector(state => state.cart.cartItem)
+   
+  
   return (
     <div>
         <Container>
+       
             {/*banner start*/}
             <section className='py-20 '>
+               
                 <Flex className="gap-x-8">
-                  <Images src={banner1}/>
+             <Images src={banner1}/>
+                
                   <Flex className="flex-col gap-y-8">
                     <Images src={banner2}/>
                     <Images src={banner3}/>
@@ -108,10 +128,37 @@ const Homepage = () => {
                     <h6 className='font-pop font-normal text-24 text-reed'>View All</h6>
                 </Flex>
                 <Flex className="gap-x-8 mt-8">
-                    <Product2 title="flash sale 1" price="20"/>
-                    <Product2 title="flash sale 2" price="15"/>
-                    <Product2 title="flash sale 3" price="10"/>
+                
                 </Flex>
+                <Slider {...settings}>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        <div>
+                          <Product2 title="flash sale 1" price="20"/>
+                        </div>
+                        
+                        
+         
+                </Slider>
             </section>
             {/*Flash Sale End*/}
 
